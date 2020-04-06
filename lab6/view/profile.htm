@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../public/css/header.css">
+    
 </head>
 <body>
+<div id="head"></div>
 <nav id="navbar" class="navbar">
-  <a class="active" href="#navbar"> Home</a> 
-  <a href="#"> Contact</a> 
-  <a href="#"> Work</a> 
-  <a href="#"> About</a>
+  <a class="active" href="#head"> Home</a> 
+  <a href="#contact"> Contact</a> 
+  <a href="#projects"> Work</a> 
+  <a href="#welcome-section"> About</a>
   <a href="#welcome-section"> Welcome</a>
 </nav>
 <section id="welcome-section" class="welcome-section">
@@ -18,7 +20,56 @@
     <p>We are student</p>
 </section>
 <section class="projects-section" id="projects" >
-    <h1>Some of the projects</h1>
+    <h1><u>Some of the projects</u></h1>
+    <div class="projects-grid">
+        <a href="#" class="project fade">
+            <img src="../public/img/5.jpg" alt="mạng lag ko có ảnh" class="project-image">
+            <p class="project-title">pỏn hub 1</p>
+        </a>
+        <a href="#" class="project fade">
+            <img src="../public/img/4.jpg" alt="mạng lag ko có ảnh" class="project-image">
+            <p class="project-title">pỏn hub 2</p>
+        </a>
+        <a href="#" class="project fade">
+            <img src="../public/img/1.jpg" alt="mạng lag ko có ảnh" class="project-image">
+            <p class="project-title">pỏn hub 3</p>
+        </a>
+        <a href="#" class="project fade">
+            <img src="../public/img/2.jpg" alt="mạng lag ko có ảnh" class="project-image">
+            <p class="project-title">pỏn hub 4</p>
+        </a>
+        <a href="#" class="project fade">
+            <img src="../public/img/3.jpg" alt="mạng lag ko có ảnh" class="project-image">
+            <p class="project-title">pỏn hub 5</p>
+        </a>
+        <a class="prev" id="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="projects-btn">
+        <button class="btn" id="detail" onclick="show()">detail</button>
+        <button class="btn" id="hidden" style="display: none;" onclick="show()">hidden</button>
+    </div>
 </section>
+<section class="project-contact" id="contact">
+    <h3>Pls contact one of these to donate for me</h3>
+    <div class="project-link">
+        <div class="dynamic">
+            <a href="#" class="link-contact"> Facebook</a>
+        </div>
+        <div class="dynamic"> 
+            <a href="#" class="link-contact"> Github</a>
+        </div>
+        <div class="dynamic">
+            <a href="mailto:#" class="link-contact"> Email</a>
+        </div>
+        <div class="dynamic">
+            <a href="#" class="link-contact"> Skype</a>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>Create by group four</p>
+</footer>
 </body>
 </html> 
+<script src="../public/js/action.js"></script>
